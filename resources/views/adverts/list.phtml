@@ -1,0 +1,36 @@
+
+<?php foreach ($adverts as $advert): ?>
+    <tr>
+        <td>
+            <?php echo $advert->getRooms() ?>
+        </td>
+        <td>
+            <?php echo $advert->getAddress() ?>
+        </td>
+        <td>
+            <?php echo $advert->gerDistrictName() ?>
+        </td>
+        <td>
+            <?php echo $advert->getFloor() ?>
+        </td>
+        <td>
+            <?php echo $advert->getBuildingType() ?>
+        </td>
+        <td>
+            <?php echo $advert->getTotalSpace() ?> / <?php echo $advert->getHousingSpace() ?> /
+            <?php echo $advert->getKitchenSpace() ?>
+        </td>
+        <td>
+            <?php echo $advert->getSanitaryUnitType() ?>
+        </td>
+        <td>
+            <?php echo $advert->getSubject() ?>
+        </td>
+        <td>
+            <?php echo $advert->getContact() ?>
+        </td>
+        <td>
+            <?php echo $advert->getAdditionalInfo() ?>
+        </td>
+    </tr>
+<?php endforeach; ?>
